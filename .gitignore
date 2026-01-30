@@ -12,7 +12,5 @@ build/
 .vscode/
 .idea/
 
-# AI Workflow
+# AI Workflow artifacts only
 .gemini/
-brain/
-*.md
