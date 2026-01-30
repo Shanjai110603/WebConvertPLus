@@ -1,0 +1,26 @@
+Privacy Policy for WebConvert+
+
+Last Updated: December 4, 2025
+
+WebConvert+ ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our Chrome Extension handles your data.
+
+1. Data Collection and Usage
+WebConvert+ is designed as a client-side extension. It scans the text of web pages you visit to identify and convert currencies, units, and dates. This processing happens entirely within your browser. We do not collect, store, or transmit your browsing history or personal data to our servers.
+
+2. External Services
+The extension uses the following third-party service solely for fetching currency exchange rates:
+- Frankfurter API (https://api.frankfurter.app): We fetch daily exchange rates from this public API. No personal data is sent with these requests.
+
+3. Privacy Mode
+We offer a "Privacy Mode" setting. When enabled, the extension will block all external network requests, including exchange rate updates. In this mode, the extension relies on cached or default exchange rates.
+
+4. Permissions
+- "Read and change all your data on the websites you visit": Required to scan page text and replace values (e.g., converting $100 to €92).
+- "Storage": Used to save your preferences (target currency, unit system, etc.) locally.
+- "Alarms": Used to schedule daily exchange rate updates.
+
+5. Changes to This Policy
+We may update this policy from time to time. Updates will be posted on this page.
+
+6. Contact
+If you have questions about this policy, please contact us.

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebConvert+ Settings</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>WebConvert+ Settings</h1>
+            <div>
+                <span id="saveStatus">Settings Saved!</span>
+                <button id="saveBtn" class="primary-btn">Save Changes</button>
+            </div>
+        </header>
+
+        <div class="grid">
+            <!-- Main Column -->
+            <div class="main-col">
+                <section>
+                    <h2>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                            </path>
+                        </svg>
+                        General
+                    </h2>
+
+                    <div class="setting-row">
+                        <label for="targetCurrency">Target Currency</label>
+                        <select id="targetCurrency">
+                            <!-- Populated by JS -->
+                        </select>
+                    </div>
+
+                    <div class="setting-row">
+                        <label for="unitSystem">Unit System</label>
+                        <select id="unitSystem">
+                            <option value="metric">Metric (km, kg, °C)</option>
+                            <option value="imperial">Imperial (mi, lbs, °F)</option>
+                            <option value="us">US Customary (mi, lbs, °F)</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-row">
+                        <label for="dateFormat">Date Format</label>
+                        <select id="dateFormat">
+                            <option value="medium">Default (Oct 24, 2025)</option>
+                            <option value="short">Short (10/24/2025)</option>
+                            <option value="long">Long (October 24, 2025)</option>
+                            <option value="iso">ISO (2025-10-24)</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-row">
+                        <label for="timezone">Timezone</label>
+                        <select id="timezone">
+                            <!-- Populated by JS -->
+                        </select>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        Privacy & Network
+                    </h2>
+                    <div class="setting-row-inline">
+                        <input type="checkbox" id="privacyMode">
+                        <label for="privacyMode">Enable Privacy Mode</label>
+                    </div>
+                    <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">
+                        When enabled, WebConvert+ will block ALL external network requests. Automatic exchange rate
+                        updates will be disabled.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="side-col">
+                <section>
+                    <h2>Exchange Rates</h2>
+                    <div id="ratesStatus">Checking status...</div>
+                    <button id="fetchRatesBtn" class="secondary-btn" style="width: 100%; margin-top: 10px;">Fetch Latest
+                        Rates</button>
+
+                    <div class="setting-row" style="margin-top: 20px;">
+                        <label for="customRatesJson" style="font-size: 13px;">Custom Rates (JSON)</label>
+                        <textarea id="customRatesJson" placeholder='{"EUR": 0.92, "GBP": 0.79}'></textarea>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Danger Zone</h2>
+                    <button id="resetBtn" class="danger-btn">Reset All Settings</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="../modules/utils.js"></script>
+    <script src="options.js"></script>
+</body>
+
+</html>

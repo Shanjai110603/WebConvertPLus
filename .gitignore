@@ -1,0 +1,18 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node/Build dependencies (if any in future)
+node_modules/
+dist/
+build/
+.env
+
+# Editor files
+.vscode/
+.idea/
+
+# AI Workflow
+.gemini/
+brain/
+*.md

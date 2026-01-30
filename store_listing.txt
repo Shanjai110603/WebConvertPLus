@@ -1,0 +1,39 @@
+Title: WebConvert+ : Smart Currency & Unit Converter
+
+Short Description:
+Automatically convert currencies, units, and timezones on any webpage to your local preferences.
+
+Long Description:
+Experience the web in your local format with WebConvert+!
+
+WebConvert+ is the ultimate client-side tool that automatically adapts web content to your preferences. Whether you're shopping abroad, reading international news, or planning a trip, WebConvert+ makes everything familiar.
+
+KEY FEATURES:
+
+💱 Smart Currency Converter
+- Automatically detects prices on any page
+- Converts to your local currency instantly
+- Uses daily updated exchange rates
+- Supports 160+ currencies
+
+📏 Universal Unit Converter
+- Seamlessly converts between Metric and Imperial systems
+- Handles Distance, Weight, Temperature, Speed, Volume, and Area
+- Smart detection of context (e.g., "5'11"" height vs "100 ft" distance)
+
+🕒 Date & Time Localizer
+- Converts foreign timezones to your local time
+- Formats dates to your preferred style (DD/MM/YYYY vs MM/DD/YYYY)
+
+🔒 Privacy First
+- All conversion happens locally on your device
+- "Privacy Mode" blocks all external API calls
+- No tracking or data collection
+
+CUSTOMIZATION:
+- Toggle individual features on/off
+- Set your preferred target currency
+- Choose your unit system (Metric/Imperial/US)
+- Customize date formats
+
+Download WebConvert+ today and browse the web like a local!

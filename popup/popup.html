@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>WebConvert+</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>WebConvert+</h1>
+      <button id="optionsBtn" title="Settings" aria-label="Settings">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path
+            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+          </path>
+        </svg>
+      </button>
+    </header>
+
+    <div class="main-controls">
+      <div class="control-label">
+        <span>Active</span>
+        <span>Enable on this site</span>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="toggleExtension" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="toggles">
+      <h3>Modules</h3>
+      <div class="grid">
+        <!-- Currency Card -->
+        <div class="feature-card">
+          <div class="card-header">
+            <span class="icon">💱</span>
+            <label class="switch-sm">
+              <input type="checkbox" id="toggleCurrency" checked>
+              <span class="slider-sm"></span>
+            </label>
+          </div>
+          <span class="card-label">Currency</span>
+        </div>
+
+        <!-- Units Card -->
+        <div class="feature-card">
+          <div class="card-header">
+            <span class="icon">📏</span>
+            <label class="switch-sm">
+              <input type="checkbox" id="toggleUnits" checked>
+              <span class="slider-sm"></span>
+            </label>
+          </div>
+          <span class="card-label">Units</span>
+        </div>
+
+        <!-- Date Card -->
+        <div class="feature-card">
+          <div class="card-header">
+            <span class="icon">🕒</span>
+            <label class="switch-sm">
+              <input type="checkbox" id="toggleDate" checked>
+              <span class="slider-sm"></span>
+            </label>
+          </div>
+          <span class="card-label">Date & Time</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="status-bar" id="status">
+      System Ready
+    </div>
+  </div>
+  <script src="../modules/utils.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>
